@@ -46,6 +46,7 @@ export PS1='\n\[$bold\]\[$black\][\[$dk_blue\]\@\[$black\]]-[\[$green\]\u\[$yell
 #source /Library/Python/3.7/site-packages/powerline/bindings/bash/powerline.sh
 
 # basic alias
+alias ls='ls -alh'
 alias ll='ls -l'
 alias cp='cp -iv'
 alias rm='rm -i'
