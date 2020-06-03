@@ -46,7 +46,6 @@ export PS1='\n\[$bold\]\[$black\][\[$dk_blue\]\@\[$black\]]-[\[$green\]\u\[$yell
 #source /Library/Python/3.7/site-packages/powerline/bindings/bash/powerline.sh
 
 # basic alias
-alias ls='ls -alh'
 alias ll='ls -l'
 alias cp='cp -iv'
 alias rm='rm -i'
@@ -54,6 +53,11 @@ alias mv='mv -iv'
 alias grep='grep --color=auto -in'
 alias ..='cd ..'
 alias pip='pip3'
+
+# k8s alias
+alias k=kubectl
+complete -F __start_kubectl k
+
 
 # basic color
 export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
